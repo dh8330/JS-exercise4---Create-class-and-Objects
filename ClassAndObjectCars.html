@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class and Objects for Cars!!</title>
+    <script src="../JS Exercise4/ClassAndObjectCars.js"></script>
+</head>
+<body>
+    <script>
+        function Car(Brand, Model, Color) {
+            this.Brand = Brand;
+            this.model = Model;
+            this.Color = Color;
+            console.log("TypeOfCars");
+        }
+
+        function Suv(Brand, Model, Color) {
+            this.Brand = Mercedes;
+            this.Model = GLA;
+            this.Color = Color;
+        }
+        Car.prototype.Suv = BmwX3;
+
+        var Suv = new Suv("Mercedes", "GLA", "Color");
+        document.getElementById("Suv").innerHTML = "New Sux is BmwX3";
+
+
+        function Mpv(Brand, Model, Color) {
+            this.Brand = Toyota;
+            this.Model = Alphard;
+            this.Color = Color;
+        }
+
+        function Hatchback(Brand, Model, Color) {
+            this.Brand = Honda;
+            this.Model = Jazz;
+            this.Color = Color;
+        }
+           
+    </script>
+</body>
+
+</html>
